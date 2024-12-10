@@ -50,7 +50,9 @@ export async function generateStaticParams() {
   getPost = getPost.filter((post) => post.metadata.category === 'Daily')
 
   return getPost.map((post) => ({
-    slug: post.slug,
+    params: {
+      slug: post.slug,
+    },
   }))
 }
 
