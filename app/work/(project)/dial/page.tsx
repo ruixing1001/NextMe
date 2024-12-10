@@ -89,19 +89,19 @@ export default function Page() {
       <Image
         placeholder="blur"
         className={'mt-10 md:mt-40 md:scale-150'}
-        alt={'Hamster1963'}
+        alt={'邵瑞星和扣帅男'}
         src={dialOne}
       />
       <Image
         placeholder="blur"
         className={'mt-5 md:mt-72 md:scale-150'}
-        alt={'Hamster1963'}
+        alt={'邵瑞星和扣帅男'}
         src={dialTwo}
       />
       <Image
         placeholder="blur"
         className={'mt-5 md:mb-56 md:mt-96 md:scale-150'}
-        alt={'Hamster1963'}
+        alt={'邵瑞星和扣帅男'}
         src={dialThree}
       />
     </section>

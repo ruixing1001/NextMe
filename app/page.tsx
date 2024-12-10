@@ -23,17 +23,17 @@ export default async function Page() {
           priority
         />
         <h1 className="mb-1 text-xl font-medium tracking-tighter">
-          Hamster1963
+          邵瑞星和扣帅男
         </h1>
         <p className="prose prose-neutral text-sm dark:prose-invert">
-          Developer, guitarist, and creator.
+          这是一个关于邵瑞星和扣帅男的爱情故事。
         </p>
         <p className={'mb-6 pt-10 text-lg font-medium tracking-tight'}>
-          👋 Hi, I'm Hamster1963.
+          🌸 在樱花树下，他们的目光交汇，爱情的种子悄然萌发。
           <br />
-          Love to write code and write articles.
+          🌊 在海边漫步，他们倾诉心声，爱情如海般深邃。
           <br />
-          I will share some tech related things and my ideas here.
+          🎵 在生活的舞台上，他们携手共舞，谱写爱的旋律。
           <br />
         </p>
         <NowPlayingInit />

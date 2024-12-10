@@ -64,13 +64,13 @@ export default function Page() {
       <Image
         placeholder="blur"
         className={'mt-10'}
-        alt={'Hamster1963'}
+        alt={'邵瑞星和扣帅男'}
         src={musicOne}
       />
       <Image
         placeholder="blur"
         className={'mt-5'}
-        alt={'Hamster1963'}
+        alt={'邵瑞星和扣帅男'}
         src={musicTwo}
       />
     </section>

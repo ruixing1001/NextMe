@@ -104,7 +104,7 @@ export default async function BlogContent({ slug }) {
             style={{ backgroundColor: placeholderImage.placeholder.hex }}
           >
             <img
-              alt={'Hamster1963'}
+              alt={'邵瑞星和扣帅男'}
               src={post.metadata.image}
               width={
                 placeholderImage.metadata.width

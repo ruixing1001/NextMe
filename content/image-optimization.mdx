@@ -25,7 +25,7 @@ ai: '博客分享了如何通过优化图片加载和缓存来提升博客页面
 
 在网页浏览中，累计布局偏移(CLS)常常会引起不好的用户体验。
 
-[Cumulative Layout Shift (CLS)  |  Articles  |  web.dev](https://web.dev/articles/cls?hl=zh-cn)
+[Cumulative Layout Shift (CLS)   |  Articles   |  web.dev](https://web.dev/articles/cls?hl=zh-cn)
 
 而在博客页面中，图片的加载往往会引起这种现象。
 
@@ -136,17 +136,17 @@ async function CenterImage(props: { src: string; alt: string })
 const [isLoading, setIsLoading] = useState(true)
 
 <div
-	className="absolute inset-0 rounded-lg"
-	style={{ backgroundColor: hex }}
+  className="absolute inset-0 rounded-lg"
+  style={{ backgroundColor: hex }}
 />
 <img
-	className={cn('relative h-full w-full rounded-lg border border-solid border-neutral-200 object-cover transition-all duration-500 dark:border-neutral-800 dark:brightness-75 dark:hover:brightness-100',
-            isLoading ? 'opacity-0 blur-lg' : 'opacity-100 blur-0')}
-	width={width}
-	height={height}
-	alt={alt}
-	src={src}
-	onLoad={() => setIsLoading(false)}
+  className={cn('relative h-full w-full rounded-lg border border-solid border-neutral-200 object-cover transition-all duration-500 dark:border-neutral-800 dark:brightness-75 dark:hover:brightness-100',
+          isLoading ? 'opacity-0 blur-lg' : 'opacity-100 blur-0')}
+  width={width}
+  height={height}
+  alt={alt}
+  src={src}
+  onLoad={() => setIsLoading(false)}
 />
 ```
 
@@ -168,7 +168,7 @@ const [isLoading, setIsLoading] = useState(true)
 
 完整博客图片组件参考代码如下：
 
-[blog-image.tsx](https://gist.github.com/hamster1963/5c848e47f69d049fb869e375170fc467)
+[blog-image.tsx](https://gist.github.com/邵瑞星和扣帅男/5c848e47f69d049fb869e375170fc467)
 
 至此，对于布局偏移的图片加载优化的过程就先告一段落了。
 
@@ -267,24 +267,3 @@ await fs.writeFile(publicPath, optimizedBuffer)
 // 如果缓存存在，将其复制到 public 目录
 await fs.mkdir(publicDir, { recursive: true })
 await fs.copyFile(cachePath, publicPath)
-```
-
-完整参考代码如下：
-
-[mdx.tsx](https://gist.github.com/hamster1963/eb264f2a8e0f391a40cda75fb27d418a)
-
-通过这种方式，可以大幅降低重复构建时所需的时间与运算性能。
-
-![CleanShot 2024-08-22 at 15.26.30@2x.png](/blog-img/image-optimization/CleanShot_2024-08-22_at_15.26.302x.png)
-
-## 最终效果
-
-在这个过程中，我们对图片进行了用户体验方面以及图片文件大小方面的优化。
-
-在优化后的页面中，每张图片的大小约为 ～100kb 左右，且看起来质量也十分不错。
-
-同时构建后的静态页面中，已嵌入的图片占位符也很好的解决了先前的布局偏移的问题。
-
-欢迎在不同的博客页面中体验这一效果，同时也欢迎打开开发者工具来查看已优化图片的信息。
-
-**Faster than fast.**

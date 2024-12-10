@@ -110,13 +110,13 @@ export default function Page() {
       <Image
         placeholder="blur"
         className={'mt-10'}
-        alt={'Hamster1963'}
+        alt={'邵瑞星和扣帅男'}
         src={orderOne}
       />
       <Image
         placeholder="blur"
         className={'mt-5'}
-        alt={'Hamster1963'}
+        alt={'邵瑞星和扣帅男'}
         src={orderTwo}
       />
     </section>
